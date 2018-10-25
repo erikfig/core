@@ -1,65 +1,66 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# O QUE É a comuREDE?
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+UM NEGÓCIO DE IMPACTO SOCIAL OPEN SOURCE
+   > Para distribuir internet gratuita e serviços de IoT nas periferias
 
-## About Laravel
+[VEJA AQUI](https://www.facebook.com/comuREDE/videos/897710280400227/)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# WHAT IS comuREDE?
+  
+AN OPEN SOURCE SOCIAL IMPACT BUSINESS
+   > To deliver free internet and IoT services in shanty towns
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+[WATCH HERE](https://youtu.be/DjV8mJWbhzo)
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+# COMO FUNCIONA?
+    
+## Do laboratório de informática para as ruas
+https://portal.ifrj.edu.br/laboratorio-informatica-ruas
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+### core
 
-## Laravel Sponsors
+Versão 0.1 - back / frontend
+PHP >= 7.0 / HTML, CSS e JAVASCRIPT
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+[Design](https://olha.ai/gRUrx) por Pedro Rangel
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+[Topologia](https://olha.ai/BlYuA) por Filipe Rimes    
+   
+## hardware / software
 
-## Contributing
+### servidor
+Raspberry W Zero / Raspbian / Apache / MQTT / MariaDB 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### sensores autônomos
+C++
 
-## Security Vulnerabilities
+[Apresentação](https://olha.ai/imh6d) - Fluxo de Água (AGO18)
+              
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+[Sketch](https://olha.ai/bYlY1)
 
-## License
+## rodar este projeto
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Baixe/clone este repositório, instale as dependências com [Composer](https://getcomposer.org).
+
+Crie uma cópia do arquivo `.env.example` com o nome `.env`, configure o banco de dados no `.env` (suporte a MySQL, PostgreSQL, SQLite e SQL Server).
+
+Crie as tabelas com o comando `php artisan migrate`, se quiser alguns dados de exemplo rode `php artisan db:seed`.
+
+Para subir um servidor de desenvolvimento rode `php artisan serve`.
+
+Qualquer dúvida crie um issue.
+
+## banco de dados
+MySQL
+
+[Modelo Entidade Relacional](https://olha.ai/2fUSM)
+
+[Arquivo de exemplo](https://olha.ai/V2aP2) REAL (SET18)
+
+
+## redes mesh
+
+[Conheça nossa base aqui](https://commotionwireless.net/)
