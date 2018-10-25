@@ -16,6 +16,7 @@ class CreateInitialTables extends Migration
         Schema::create('acessos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('mac', 17);
+            $table->datetime('dia_hora');
             $table->string('gateway_node', 15);
             $table->string('localizacao', 500);
             $table->timestamps();
@@ -31,8 +32,9 @@ class CreateInitialTables extends Migration
 
         Schema::create('sensores_agua', function (Blueprint $table) {
             $table->increments('id');
+            $table->datetime('dia_hora');
             $table->enum('estado', ['D', 'L']);
-            $table->unsignedInteger('acesso_id');
+            $table->unsignedInteger('acesso_id')->nullable();
             $table->timestamps();
             
             $table->foreign('acesso_id')
@@ -41,8 +43,9 @@ class CreateInitialTables extends Migration
 
         Schema::create('sensores_luz', function (Blueprint $table) {
             $table->increments('id');
+            $table->datetime('dia_hora');
             $table->enum('estado', ['D', 'L']);
-            $table->unsignedInteger('acesso_id');
+            $table->unsignedInteger('acesso_id')->nullable();
             $table->timestamps();
             
             $table->foreign('acesso_id')

@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sensores/agua/agora', 'SensoresAguaController@agora');
+Route::get('/sensores/agua/ultimos-trinta-dias', 'SensoresAguaController@ultimosTrintaDias');
+Route::get('/sensores/luz/agora', 'SensoresLuzController@agora');
+Route::get('/sensores/luz/ultimos-trinta-dias', 'SensoresLuzController@ultimosTrintaDias');
